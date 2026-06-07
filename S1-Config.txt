@@ -1,0 +1,23 @@
+enable
+configure terminal
+
+hostname S1
+
+interface range fa0/1-2
+ switchport mode trunk
+ channel-group 1 mode active
+
+interface port-channel 1
+ switchport mode trunk
+
+interface range fa0/5-6
+ switchport mode trunk
+ channel-group 3 mode active
+
+interface port-channel 3
+ switchport mode trunk
+
+spanning-tree vlan 1 priority 0
+
+end
+copy running-config startup-config

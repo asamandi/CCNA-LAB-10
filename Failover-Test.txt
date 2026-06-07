@@ -1,0 +1,31 @@
+On S1:
+
+enable
+
+configure terminal
+
+interface fa0/1
+
+shutdown
+
+end
+
+
+Check:
+
+show etherchannel summary
+
+show spanning-tree
+
+
+Restore:
+
+enable
+
+configure terminal
+
+interface fa0/1
+
+no shutdown
+
+end

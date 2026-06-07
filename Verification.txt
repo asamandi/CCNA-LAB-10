@@ -1,0 +1,5 @@
+show etherchannel summary
+show interfaces trunk
+show spanning-tree
+show spanning-tree vlan 1
+show lacp neighbor
